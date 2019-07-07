@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  name: string;
+  email: string;
+  message: string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  submitForm() {
+    const message = `${this.name} your form has been submitted.`;
+    alert (message);
   }
 
 }
