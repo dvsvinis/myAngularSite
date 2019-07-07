@@ -4,9 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
    <app-header></app-header>
-   <app-contact></app-contact>
-   
-   <app-home></app-home>
   
    <!--routes injected here-->
     <router-outlet></router-outlet>
@@ -17,5 +14,8 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  title = 'myAngularSite';
+  
+  constructor() {}
+
+
 } 
